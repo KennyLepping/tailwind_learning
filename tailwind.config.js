@@ -1,8 +1,13 @@
 module.exports = {
-  purge: ["*.html"], // This is needed for file types - missing from tutorial
-  content: [],
+  content: ["*.html"],
   theme: {
     extend: {},
+  },
+  variants: {
+    extend: {
+      backgroundColor: ["active"],
+      fontSize: ["hover"],
+    },
   },
   plugins: [],
 };
